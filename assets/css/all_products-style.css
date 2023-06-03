@@ -1,0 +1,201 @@
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir.eot');
+    src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vazir.woff2') format('woff2'),
+        url('../fonts/Vazir.woff') format('woff'),
+        url('../fonts/Vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Bold.eot');
+    src: url('../fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vazir-Bold.woff2') format('woff2'),
+        url('../fonts/Vazir-Bold.woff') format('woff'),
+        url('../fonts/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Black.eot');
+    src: url('../fonts/Vazir-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vazir-Black.woff2') format('woff2'),
+        url('../fonts/Vazir-Black.woff') format('woff'),
+        url('../fonts/Vazir-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Medium.eot');
+    src: url('../fonts/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vazir-Medium.woff2') format('woff2'),
+        url('../fonts/Vazir-Medium.woff') format('woff'),
+        url('../fonts/Vazir-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Light.eot');
+    src: url('../fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vazir-Light.woff2') format('woff2'),
+        url('../fonts/Vazir-Light.woff') format('woff'),
+        url('../fonts/Vazir-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Thin.eot');
+    src: url('../fonts/Vazir-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vazir-Thin.woff2') format('woff2'),
+        url('../fonts/Vazir-Thin.woff') format('woff'),
+        url('../fonts/Vazir-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+:root {
+    --black: #1B1722;
+    --white: #F0F0F0;
+    --box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    --box-shadow-hover: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    --checked: #FF9F43;
+}
+
+* {
+    font-family: 'Vazir';
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+
+.pro-title {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.content {
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: var(--box-shadow);
+    transition: .4s;
+    background: var(--white);
+}
+
+.content:hover {
+    box-shadow: var(--box-shadow-hover);
+    transform: translate(0px, -8px);
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    border-radius: 15%;
+}
+
+.pro-detail {
+    text-align: center;
+    color: var(--white);
+    padding-top: 0 8px;
+}
+
+.pro-price {
+    font-size: 26px;
+    text-align: center;
+    color: var(--black);
+    margin: 0;
+}
+
+.pro-rate {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.pro-rate li {
+    padding: 5px;
+}
+
+.fa {
+    font-size: 26px;
+    transition: .4s;
+}
+
+.checked {
+    color: var(--checked);
+}
+
+.fa:hover {
+    transform: scale(1.3);
+    transition: .6s;
+}
+
+.buy {
+    text-align: center;
+    font-size: 24px;
+    color: var(--white);
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: var(--black);
+}
+
+
+/* media queries for web responsive */
+@media (max-width:991px) {
+    .content {
+        width: 45%;
+    }
+}
+
+@media (max-width:768px) {
+    .content {
+        width: 100%;
+    }
+}
