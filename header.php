@@ -9,7 +9,7 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>کافه قنادی باران</title>
+    <title>کافه کیک باران</title>
 
     <!-- icon -->
     <link rel="icon" type="image/png" href="assets/images/Logo1.png" />
@@ -39,7 +39,7 @@ session_start();
     <header class="header">
         <div class="logoContent">
             <a href="index.php" class="logo"><img src="assets/images/Logo1.png" alt="لوگو"></a>
-            <h1 class="logoName">کافه قنادی باران</h1>
+            <h1 class="logoName">کافه کیک باران</h1>
         </div>
 
         <nav class="navbar">

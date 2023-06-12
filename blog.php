@@ -27,9 +27,9 @@ $result = mysqli_query($link, $query);
             
             <div class="blog-content">
                 <p><?php echo ($row['blog_text']) ?></p>
-                <div class="content-img-container">
+            </div>
+            <div class="content-img-container">
                     <img src="assets/images/blogs/<?php echo ($row['blog_photo']) ?>" alt="<?php echo ($row['blog_subject']) ?>">
-                </div>
             </div>
 
 

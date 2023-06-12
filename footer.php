@@ -4,7 +4,7 @@
          <div class="mainBox">
              <div class="content">
                  <a href="#"><img src="assets/images/Logo1.png" alt="لوگو"></a>
-                 <h1 class="logoName">کافه قنادی باران</h1>
+                 <h1 class="logoName">کافه کیک باران</h1>
              </div>
              <p></p>
          </div>
@@ -20,7 +20,7 @@
              <h3>دسترسی های بیشتر</h3>
              <a href="all_products.php"><i class="fas fa-arrow-left">آیتم های سفارش</i></a>
              <a href="#footer"><i class="fas fa-arrow-left">سیاست حفظ حریم خصوصی</i></a>
-             <a href="#"><i class="fas fa-arrow-left">سرویس های ما</i></a>
+             <a href="aboutUs.php"><i class="fas fa-arrow-left">سرویس های ما</i></a>
          </div>
          <div class="box">
              <h3>اطلاعات تماس</h3>

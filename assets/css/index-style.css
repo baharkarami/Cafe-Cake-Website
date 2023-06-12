@@ -605,6 +605,124 @@ section {
 }
 
 
+/* about us style */
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.about .about-image {
+    flex: 1 1 41rem;
+}
+
+.about .about-image img {
+    width: 100%;
+}
+
+.about .about-content {
+    flex: 1 1 41rem;
+    text-align: center;
+}
+
+.about .about-content h3 {
+    text-shadow: var(--box-shadow);
+    font-size: 4rem;
+    color: var(--black);
+}
+
+.about .about-content p {
+    font-size: 2rem;
+    color: var(--black);
+    line-height: 2.5;
+    padding: 1rem 0;
+}
+
+.about .about-content .about-icons-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-end;
+}
+
+.about .about-content .about-icons-container .about-icons {
+    background: var(--beige);
+    padding: 2rem;
+    flex: 1 1 16rem;
+}
+
+.about .about-content .about-icons-container .about-icons i {
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+    color: var(--black);
+}
+
+.about .about-content .about-icons-container .about-icons span {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--black);
+    display: block;
+}
+
+.about-comment {
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    max-width: 800px;
+    max-height: 500px;
+    width: 100%;
+    background: var(--beige);
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--box-shadow);
+    padding: 5rem;
+}
+
+.about-comment .about-comment-box h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--black);
+    text-shadow: var(--box-shadow);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-comment .about-comment-box input,
+textarea {
+    width: 100%;
+    font-size: 17px;
+    margin-bottom: 1.3rem;
+    border-radius: 15px;
+    outline: none;
+    padding: 1rem;
+}
+
+.about-comment .about-comment-box input {
+    min-height: 40px;
+}
+
+.about-comment .about-comment-box input:focus,
+textarea:focus {
+    box-shadow: var(--box-shadow);
+}
+
+.about-comment .about-comment-box input.button {
+    color: var(--white);
+    background: var(--black);
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 1.7rem;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.about-comment .about-comment-box input.button:hover {
+
+    background: var(--beige);
+}
+
 
 /* all product style */
 .pro-title {
@@ -1106,16 +1224,16 @@ main .blog-content {
     font-weight: 600;
     color: var(--black);
     margin: 2rem 0;
+    display: flex;
+    align-items: center;
 }
 
-main .blog-content .content-img-container {
-    width: 100%;
-    height: auto;
+main .content-img-container {
+    margin: auto;
 }
 
-main .blog-content .content-img-container img {
+main .content-img-container img {
     border-radius: 5%;
-    align-self: center;
 }
 
 
