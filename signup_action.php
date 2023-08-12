@@ -48,12 +48,12 @@ $query = "INSERT INTO users(fullName, userName, password, email,phone,type) VALU
 
 if (mysqli_query($link, $query) === true) {
     echo ("<script>
-            alert('ثبت نام شما در کافه قنادی باران با موفقیت انجام شد');
+            alert('ثبت نام شما در کافه کیک کیشا با موفقیت انجام شد');
             location.replace('index.php');
             </script>");
 } else {
     echo ("<script>
-            alert('ثبت نام شما در کافه قنادی باران انجام نشد');
+            alert('ثبت نام شما در کافه کیک کیشا انجام نشد');
             location.replace('signup.php');
             </script>");
     exit();

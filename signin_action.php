@@ -11,7 +11,7 @@ if (
 } else {
     echo ("<script>
 alert('برخی از فیلدها مقداردهی نشده اند');
-location.replace('signup.php');
+location.replace('signin.php');
 </script>");
     exit();
 }
@@ -46,7 +46,7 @@ if ($row) {
     }
 
     echo ("<script>
-	alert('عملیات ورود موفقیت آمیز بود. به کافه قنادی باران خوش آمدید');
+	alert('عملیات ورود موفقیت آمیز بود. به کافه کیک کیشا خوش آمدید');
     location.replace('index.php');
 	</script>");
 } else {

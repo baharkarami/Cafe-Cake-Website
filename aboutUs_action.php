@@ -12,7 +12,7 @@ if (
 } else {
     echo ("<script>
 alert('برخی از فیلدها مقداردهی نشده اند');
-location.replace('contactUs.php');
+location.replace('aboutUs.php');
 </script>");
     exit();
 }

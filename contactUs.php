@@ -3,7 +3,7 @@ include('header.php');
 ?>
 <div class="sign-body">
     <div class="container">
-        <h1 class="form-title">ثبت نام</h1>
+        <h1 class="form-title">ارتباط با ما</h1>
 
         <form action="contactUs_action.php" method="POST">
             <div class="main-user-info">

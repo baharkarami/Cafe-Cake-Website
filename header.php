@@ -29,8 +29,6 @@ session_start();
     <!---Boxicons CDN Setup for icons-->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- blogs script -->
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
 </head>
 
@@ -39,7 +37,7 @@ session_start();
     <header class="header">
         <div class="logoContent">
             <a href="index.php" class="logo"><img src="assets/images/Logo1.png" alt="لوگو"></a>
-            <h1 class="logoName">کافه کیک باران</h1>
+            <h1 class="logoName">کافه کیک کیشا</h1>
         </div>
 
         <nav class="navbar">
@@ -60,7 +58,7 @@ session_start();
             }
             ?>
 
-            <a href="contactUs.php">ارتباط با ما</a>
+            <a href="aboutUs.php">درباره ما</a>
 
             <?php
             if (isset($_SESSION["state_login"]) && $_SESSION["state_login"] === true && $_SESSION["user_type"] === "admin") {

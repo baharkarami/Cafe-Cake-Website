@@ -11,12 +11,15 @@ $resultProducts = mysqli_query($link, $queryProducts);
 
 $queryBlogs = "SELECT * FROM blogs";
 $resultBlogs = mysqli_query($link, $queryBlogs);
+
+$queryReview = "SELECT * FROM reviews";
+$resultReview = mysqli_query($link, $queryReview);
 ?>
 
 <!-- home section starts here -->
 <section class="home" id="home">
     <div class="homeContent">
-        <h2>کیک های خوشمزه برای همه جا</h2>
+        <h2>کافه کیک کیشا</h2>
         <p></p>
         <div class="home-btn">
             <a href="#product"><button>بیشتر ببین</button></a>
@@ -36,7 +39,6 @@ $resultBlogs = mysqli_query($link, $queryBlogs);
             <?php
             for ($i = 1; $i <= 6; $i++) {
                 $row_pro = mysqli_fetch_array($resultProducts);
-
             ?>
                 <div class="swiper-slide box">
                     <div class="img">
@@ -96,7 +98,6 @@ $resultBlogs = mysqli_query($link, $queryBlogs);
             <?php
             for ($x = 1; $x <= 3; $x++) {
                 $row_blog = mysqli_fetch_array($resultBlogs);
-
             ?>
                 <div class="swiper-slide box">
                     <div class="img">
@@ -140,65 +141,31 @@ $resultBlogs = mysqli_query($link, $queryBlogs);
     </div>
     <div class="swiper review-row">
         <div class="swiper-wrapper">
-            <div class="swiper-slide box">
-                <div class="client-review">
-                    <p></p>
-                </div>
-                <div class="client-info">
-                    <div class="img">
-                        <img src="assets/images/woman.jpg" alt="">
+            <?php
+            for ($x = 1; $x <= 9; $x++) {
+                $row_review = mysqli_fetch_array($resultReview);
+            ?>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p><?php echo ($row_review['review']) ?></p>
                     </div>
-                    <div class="clientName">
-                        <h3>مهتا ملکی</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <div class="client-review">
-                    <p></p>
-                </div>
-                <div class="client-info">
-                    <div class="img">
-                        <img src="assets/images/woman1.jpg" alt="">
-                    </div>
-                    <div class="clientName">
-                        <h3>صبا بهاری</h3>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="assets/images/person.png" alt="">
+                        </div>
+                        <div class="clientName">
+                            <h3><?php echo ($row_review['fullName']) ?></h3>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="swiper-slide box">
-                <div class="client-review">
-                    <p></p>
-                </div>
-                <div class="client-info">
-                    <div class="img">
-                        <img src="assets/images/woman2.jpg" alt="">
-                    </div>
-                    <div class="clientName">
-                        <h3>نگار امینی</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <div class="client-review">
-                    <p></p>
-                </div>
-                <div class="client-info">
-                    <div class="img">
-                        <img src="assets/images/woman1.jpg" alt="">
-                    </div>
-                    <div class="clientName">
-                        <h3>سنا حسینی</h3>
-                    </div>
-                </div>
-            </div>
+            <?php
+            }
+            ?>
+
         </div>
     </div>
 </section>
 <!-- review section ends here -->
-
-
-
 
 <?php
 include('footer.php');

@@ -35,7 +35,6 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    /* background-color: var(--white); */
     border-radius: 10rem;
 }
 
@@ -374,9 +373,8 @@ section {
 }
 
 .review .review-row .box .client-info .img img {
-    width: 7rem;
-    height: 7rem;
-    clip-path: circle(50% at 50% 50%);
+    width: 5rem;
+    height: 5rem;
 }
 
 .review .review-row .box .client-info .clientName h3 {
@@ -619,6 +617,7 @@ section {
 
 .about .about-image img {
     width: 100%;
+    border-radius: 5%;
 }
 
 .about .about-content {
@@ -648,9 +647,10 @@ section {
 }
 
 .about .about-content .about-icons-container .about-icons {
-    background: var(--beige);
+    background: var(--cream);
     padding: 2rem;
     flex: 1 1 16rem;
+    border-radius: 5%;
 }
 
 .about .about-content .about-icons-container .about-icons i {
@@ -673,7 +673,7 @@ section {
     max-width: 800px;
     max-height: 500px;
     width: 100%;
-    background: var(--beige);
+    background: var(--cream);
     border-radius: 20px;
     box-shadow: 0 0 10px var(--box-shadow);
     padding: 5rem;
@@ -719,8 +719,9 @@ textarea:focus {
 }
 
 .about-comment .about-comment-box input.button:hover {
-
-    background: var(--beige);
+    background: var(--black);
+    color: var(--beige);
+    font-size: 1.9rem;
 }
 
 
@@ -838,7 +839,7 @@ textarea:focus {
     margin: 0 auto;
     padding: 2rem;
     border-radius: .5rem;
-    background: var(--beige);
+    background: var(--cream);
 }
 
 .admin-product-form-container p {
@@ -885,7 +886,7 @@ textarea:focus {
 }
 
 .btn-submit-product:hover {
-    background: var(--cream);
+    background: var(--beige);
     color: var(--black);
 }
 
@@ -1076,7 +1077,7 @@ textarea:focus {
 }
 
 .product-btn-group .add-cart {
-    background-color: var(--beige);
+    background-color: var(--cream);
     color: var(--black);
     border-radius: 4px;
     cursor: pointer;
@@ -1127,7 +1128,7 @@ textarea:focus {
 
 .blog-section .section-content .blog-cards .blog-card {
     width: 100%;
-    background-color: var(--beige);
+    background-color: var(--cream);
     position: relative;
 }
 
@@ -1179,7 +1180,7 @@ textarea:focus {
 main {
     width: 100%;
     max-width: 80rem;
-    background-color: var(--beige);
+    background-color: var(--cream);
     padding: 3rem;
     margin: 0 auto;
     border-radius: 1.5rem;
@@ -1220,7 +1221,7 @@ main p {
 }
 
 main .blog-content {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: 600;
     color: var(--black);
     margin: 2rem 0;
@@ -1229,7 +1230,14 @@ main .blog-content {
 }
 
 main .content-img-container {
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .content-img-container img {
+    max-width: 70%;
+    max-height: 60%;
 }
 
 main .content-img-container img {
